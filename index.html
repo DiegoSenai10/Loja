@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="max" alt="">
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="logo-nome">Fazendinha<span>.</span></h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar produto" oninput="buscarProdutos()">
+                <button onclick="buscarSite()">Buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <img src="98668.png" alt="">
+                </div>
+                <span id="cont-carrinho"></span>
+            </div>
+            <div id="carrinho-itens">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$0,00</span>
+                <button class="limpa" onclick="limparCarrinho()">Limpar Carrinho</button>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container">
+            <div class="produtos">
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Wheat_JE2_BE2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Trigo</h3>
+                            <p>R$ 80,00</p>
+                            <button onclick="addCarrinho('Trigo', 80.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Potato_JE3_BE2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Batata</h3>
+                            <p>R$ 120,00</p>
+                            <button onclick="addCarrinho('Batata', 120.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Carrot_JE3_BE2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Cenoura</h3>
+                            <p>R$ 90,00</p>
+                            <button onclick="addCarrinho('Cenoura', 90.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="produto-linha">
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Beetroot_JE2_BE2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Beterraba</h3>
+                            <p>R$ 140,00</p>
+                            <button onclick="addCarrinho('Beterraba', 140.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Carved_Pumpkin_29_JE4.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Abóbora</h3>
+                            <p>R$ 110,00</p>
+                            <button onclick="addCarrinho('Abóbora', 110.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="imagem">
+                            <img src="Melon_JE2_BE2.webp" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Melancia</h3>
+                            <p>R$ 85,00</p>
+                            <button onclick="addCarrinho('Melancia', 85.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
